@@ -1,0 +1,169 @@
+body {
+    background-color: #181818;
+    font-family: roboto;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: all 1s ease-in-out;
+    position: relative;
+}
+.backgroundImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    filter: brightness(20%) blur(3px);
+    opacity: 0;
+    z-index: 1;
+    transition: all 1s ease-in-out;
+}
+.allPlayerContainer {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.attackButtonContainer {
+    text-align: center;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.attackButtonContainer button {
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 300px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    transition: all 0.3s ease;
+    margin-bottom: 5px;
+
+}
+.attackButtonContainer button:hover {
+    background-color: black;
+    border-color: white;
+    color: white;
+}
+
+.choosePlayerTitle {
+    padding: 0px;
+    margin: 40px;
+}
+.choosePlayerTitle .ally {
+    opacity: 1;
+    text-align: center;
+    width: 350px;
+    background-image: url("../img/greenSpark.jpg");
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px green;
+}
+.choosePlayerTitle .enemy {
+    opacity: 0.8;
+    text-align: center;
+    width: 350px;
+    background-image: url("../img/redSpark.jpg");
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px red;
+}
+
+.heroInfoContainer {
+    height: 250px;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #404040;
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out;
+}
+.heroInfoContainer:hover {
+    background-color: #292929;
+    transform: translateY(-7px);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.borderColorWhite {
+    border-color: white;
+}
+
+.imageContainer {
+    width: 400px;
+    height: 220px;
+    
+
+}
+.imageContainer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.infoRow {
+    margin-bottom: 10px;
+}
+.errorLabel {
+    color: red;
+    opacity: 0;
+}
+
+.arenaTitle {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.arena_vs_style {
+    margin: 50px auto;
+    width: 1000px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.arena_vs_style .vs {
+    font-size: 40px;
+    font-weight: bold;
+}
+.arena_vs_style img {
+    width: 400px;
+    height: 250px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+}
+.arena_vs_style .ally,.enemy {
+    text-align: center;
+}
+.fightButtonContainer {
+    text-align: center;
+    margin: 20px 0;   
+}
+.fightButtonContainer button {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.fightButtonContainer button:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+.fightLabel {
+    text-align: center;
+    font-size: 20px;
+    opacity: 0;
+}
